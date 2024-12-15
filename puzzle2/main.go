@@ -56,7 +56,7 @@ func dataInSlices() ([]int, []int) {
 	return col1, col2
 }
 
-func main() {
+func findScore() int {
 	var valueScore []int
 	col1, col2 := dataInSlices();
 	for _,num := range(col1) {
@@ -68,5 +68,9 @@ func main() {
 		}
 		valueScore = append(valueScore, multiply(num, counter))
 	}
-	fmt.Println(sum(valueScore))
+	return (sum(valueScore))
+}
+
+func main() {
+	fmt.Println(findScore())
 }
