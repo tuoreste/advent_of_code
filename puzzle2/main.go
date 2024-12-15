@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func multiply(x int, y int) {
+func multiply(x int, y int) int {
 	return (x * y)
 }
 
@@ -68,5 +68,5 @@ func main() {
 		}
 		valueScore = append(valueScore, multiply(num, counter))
 	}
-	return sum(valueScore)
+	fmt.Println(sum(valueScore))
 }
